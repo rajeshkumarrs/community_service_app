@@ -8,7 +8,7 @@ import os
 load_dotenv()
 db_url = os.environ["DATABASE_URL"]
 
-# db_url = db_url.replace('postgres', 'postgresql', 1)
+db_url = db_url.replace('postgres', 'postgresql', 1)
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = db_url
